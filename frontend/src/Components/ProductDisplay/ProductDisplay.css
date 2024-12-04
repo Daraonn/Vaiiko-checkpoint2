@@ -1,0 +1,148 @@
+.product-display {
+    display: flex;
+    width: 93%;
+}
+
+.product-left {
+    padding-left: 86px;
+    padding-top: 25px;
+}
+.display-image-main img.main{
+    width: 650px;
+    height: 425px;
+}
+
+.display-image-lesser{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.display-image-lesser img {
+    width: 95px;
+    height: auto;
+    cursor: pointer;
+}
+
+.product-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 93px;
+}
+
+.product-right h1 {
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.product-right button{
+    margin-top: 110px;
+    width: 98%;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #a1c900;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.display-price {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .product-display {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-left {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  
+    .display-image-main img.main {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-right {
+      padding-left: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .product-right h1 {
+      font-size: 2rem;
+    }
+  
+    .product-right button {
+      width: 100%;
+      font-size: 1.25rem;
+    }
+  
+    .display-price {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-display {
+      padding: 20px;
+      flex-direction: column;
+    }
+  
+    .product-left {
+      padding-left: 0;
+    }
+  
+    .display-image-main img.main {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-right h1 {
+      font-size: 1.75rem;
+    }
+  
+    .product-right button {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  
+    .display-price {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-display {
+      padding: 10px;
+      flex-direction: column;
+    }
+  
+    .display-image-main img.main {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-right h1 {
+      font-size: 1.5rem;
+    }
+  
+    .product-right button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .display-price {
+      font-size: 1rem;
+    }
+  }

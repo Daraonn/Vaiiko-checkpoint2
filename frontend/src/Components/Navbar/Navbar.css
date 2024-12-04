@@ -1,0 +1,176 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.nav-logo img {
+  width: 275px;
+  height: auto;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-right: 100px;
+  gap: 10px;
+}
+
+.nav-login-cart button[name="login_button"] {
+  width: 100px;
+  height: 35px;
+  outline: none;
+  border: 1px solid;
+  border-radius: 75px;
+  font-weight: 400;
+  background: transparent;
+}
+
+.nav-login-cart button[name="login_button"]:active { 
+  background: lightgray;
+}
+
+.nav-cart-count {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  color: white;
+  font-size: 12px;
+  margin-top: -24px;
+  margin-left: -20px;
+  border-radius: 12px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f4f4; 
+  padding: 10px 20px; 
+  margin-top: 5px; 
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 82%;
+  margin-left: 115px;
+}
+
+.nav-menu div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  cursor: pointer;
+}
+
+.nav-menu img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  flex-direction: row;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav-menu button:hover {
+  color: #007bff; 
+}
+
+
+@media (max-width: 1200px) {
+  .nav-logo {
+    margin-left: 50px;
+  }
+
+  .nav-login-cart {
+    margin-right: 50px;
+  }
+
+  .nav-menu {
+    margin-left: 60px;
+  }
+
+  .nav-cart-count {
+    margin-top: -22px;
+    margin-left: -18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-logo {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .nav-login-cart {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    margin-left: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu div {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .nav-menu img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav-cart-count {
+    margin-left: 10px;
+    margin-top: -18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo img {
+    width: 200px;
+  }
+
+  .nav-login-cart button[name="login_button"] {
+    width: 80px;
+    height: 30px;
+  }
+
+  .nav-menu {
+    padding: 5px 10px;
+  }
+
+  .nav-menu button {
+    font-size: 12px;
+  }
+}

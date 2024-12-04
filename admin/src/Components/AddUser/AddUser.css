@@ -1,0 +1,59 @@
+.add-user {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .add-users-fields,
+  .add-users-password,
+  .add-users-is_admin {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .add-users-fields p,
+  .add-users-password p,
+  .add-users-is_admin p {
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+  
+  .add-users-fields input,
+  .add-users-password input,
+  .add-users-is_admin select {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  
+  

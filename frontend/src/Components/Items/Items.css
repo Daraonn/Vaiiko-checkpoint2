@@ -1,0 +1,30 @@
+.item-image {
+    width: 250px;
+    cursor: pointer;
+    height: 200px;
+    background: transparent;
+}
+.item-image img {
+    width: 82%;
+    height: 100%;
+    background: transparent;
+}
+
+.item-image p {
+    margin: 6px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.item-price {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.item-image:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
